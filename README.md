@@ -17,7 +17,7 @@
 
 前往https://huggingface.co/hfl/chinese-roberta-wwm-ext/tree/main下载config.json, pytorch_model.bin, vocab.txt
 
-放到./model_hub/chinese-roberta-wwm-ext下。
+放到./model_hub/chinese-roberta-wwm-ext下；切换model.py和training.py的traininin stage代码。
 
 # 依赖
 
