@@ -22,6 +22,11 @@ pytorch-crf==0.7.2
 
 ```python
 --checkpoint：模型和配置保存位置
+----skill:
+--------vocab.txt
+--------pytorch_model_ner.bin
+--------ner_args.json
+--------config.json
 --model_hub：预训练模型
 ----chinese-roberta-wwm-ext:
 --------vocab.txt
@@ -40,8 +45,6 @@ pytorch-crf==0.7.2
 ```
 
 # 说明
-
-这里以dgre数据为例，其余数据类似。
 
 ```python
 1、前往https://huggingface.co/hfl/chinese-roberta-wwm-ext/tree/main下载config.json, pytorch_model.bin, vocab.txt
