@@ -1,0 +1,36 @@
+{
+  "bert_ner_dir": "./checkpoint/skill",
+  "bert_pretrained_dir": "./model_hub/chinese-roberta-wwm-ext",
+  "output_dir": "./checkpoint/skill",
+  "data_dir": "./data/",
+  "data_path": "./data/skill\\ner_data",
+  "labels": [
+    "技能"
+  ],
+  "bio_labels": [
+    "O",
+    "B-技能",
+    "I-技能"
+  ],
+  "num_labels": 3,
+  "label2id": {
+    "O": 0,
+    "B-技能": 1,
+    "I-技能": 2
+  },
+  "id2label": {
+    "0": "O",
+    "1": "B-技能",
+    "2": "I-技能"
+  },
+  "max_seq_len": 512,
+  "epochs": 4,
+  "train_batch_size": 16,
+  "dev_batch_size": 16,
+  "bert_learning_rate": 3e-05,
+  "crf_learning_rate": 0.003,
+  "adam_epsilon": 1e-08,
+  "weight_decay": 0.01,
+  "warmup_proportion": 0.01,
+  "save_step": 500
+}
