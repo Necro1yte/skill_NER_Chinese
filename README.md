@@ -1,7 +1,10 @@
 # skill_NER_Chinese
 基于中文语料库训练的技能实体识别模型。
+
 模型：roberta_bilstm_crf
+
 参考实现：https://github.com/taishan1994/BERT-BILSTM-CRF
+
 # 依赖
 
 ```python
