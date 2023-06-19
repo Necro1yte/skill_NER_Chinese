@@ -1,6 +1,8 @@
 # skill_NER_Chinese
 基于中文语料库训练的技能实体识别模型。
 
+标注过程中，倾向于硬技能（如C++、深度学习），而非软技能（团结合作、责任心）
+
 模型：roberta_bilstm_crf
 
 参考实现：https://github.com/taishan1994/BERT-BILSTM-CRF
