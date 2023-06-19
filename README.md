@@ -7,6 +7,18 @@
 
 参考实现：https://github.com/taishan1994/BERT-BILSTM-CRF
 
+# 测试
+
+已训练的pytorch_model_ner.bin下载：链接：https://share.weiyun.com/v6o317Bj 密码：y4y2dr
+
+放到./checkpoint/skill下。
+
+# 训练
+
+前往https://huggingface.co/hfl/chinese-roberta-wwm-ext/tree/main下载config.json, pytorch_model.bin, vocab.txt
+
+放到./model_hub/chinese-roberta-wwm-ext下。
+
 # 依赖
 
 ```python
@@ -47,9 +59,8 @@ pytorch-crf==0.7.2
 # 说明
 
 ```python
-1、前往https://huggingface.co/hfl/chinese-roberta-wwm-ext/tree/main下载config.json, pytorch_model.bin, vocab.txt
 
-2、在config.py里面定义一些参数，比如：
+在config.py里面定义一些参数，比如：
 --max_seq_len：句子最大长度，GPU显存不够则调小。
 --epochs：训练的epoch数
 --train_batch_size：训练的batchsize大小，GPU显存不够则调小。
@@ -57,9 +68,9 @@ pytorch-crf==0.7.2
 --save_step：多少step保存模型
 其余的可保持不变。
 
-4、main.py里定义了data_name为skill，可以修改为其他数据集。运行：python main.py
+1. main.py里定义了data_name为skill，可以修改为其他数据集。运行：python main.py
 
-5、命令行直接输入待抽取语句作为参数并运行，如：python predict.py 熟悉常用中间件，包括但不限于Redis、Kafka、Zookeeper等，了解其性能调优;
+2. 命令行直接输入待抽取语句作为参数并运行，如：python predict.py 熟悉常用中间件，包括但不限于Redis、Kafka、Zookeeper等，了解其性能调优;
 ```
 
 ## skill数据集
