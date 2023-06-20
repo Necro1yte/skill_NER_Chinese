@@ -75,9 +75,9 @@ pytorch-crf==0.7.2
 
 ## skill数据集
 ```python
-              precision    recall  f1-score   support
+              precision    recall   f1-score   support
 
-        技能       0.82667      0.86111      0.84354       648
+      技能    0.82667      0.86111   0.84354    648
 
 文本>>>>>： 5、熟悉常用中间件，包括但不限于Redis、Kafka、Zookeeper等，了解其性能调优;
 实体>>>>>： [{"span": "中间件", "offset": [6, 8], "tag": "技能"}, {"span": "Redis", "offset": [16, 20], "tag": "技能"}, {"span": "Kafka", "offset": [22, 26], "tag": "技能"}, {"span": "Zookeeper", "offset": [28, 36], "tag": "技能"}, {"span": "性能调优", "offset": [42, 45], "tag": "技能"}]
