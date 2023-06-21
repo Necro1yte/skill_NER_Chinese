@@ -15,7 +15,9 @@
 
 命令行直接输入待抽取语句作为参数并运行，如：
 
-"python predict.py 熟悉常用中间件，包括但不限于Redis、Kafka、Zookeeper等，了解其性能调优;"
+```python
+python predict.py 熟悉常用中间件，包括但不限于Redis、Kafka、Zookeeper等，了解其性能调优;
+```
 
 # 训练
 
@@ -23,7 +25,11 @@
 
 放到./model_hub/chinese-roberta-wwm-ext下；切换model.py和training.py的traininin stage代码。
 
-main.py里定义了data_name为skill，可以修改为其他数据集。运行："python main.py"
+main.py里定义了data_name为skill，可以修改为其他数据集。运行：
+
+```python
+python main.py
+```
 
 # 依赖
 
