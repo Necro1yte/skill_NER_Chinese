@@ -13,11 +13,17 @@
 
 放到./checkpoint/skill下。
 
+命令行直接输入待抽取语句作为参数并运行，如：
+
+"python predict.py 熟悉常用中间件，包括但不限于Redis、Kafka、Zookeeper等，了解其性能调优;"
+
 # 训练
 
 前往https://huggingface.co/hfl/chinese-roberta-wwm-ext/tree/main下载config.json, pytorch_model.bin, vocab.txt
 
 放到./model_hub/chinese-roberta-wwm-ext下；切换model.py和training.py的traininin stage代码。
+
+main.py里定义了data_name为skill，可以修改为其他数据集。运行："python main.py"
 
 # 依赖
 
@@ -68,9 +74,6 @@ pytorch-crf==0.7.2
 --save_step：多少step保存模型
 其余的可保持不变。
 
-1. main.py里定义了data_name为skill，可以修改为其他数据集。运行：python main.py
-
-2. 命令行直接输入待抽取语句作为参数并运行，如：python predict.py 熟悉常用中间件，包括但不限于Redis、Kafka、Zookeeper等，了解其性能调优;
 ```
 
 ## skill数据集
